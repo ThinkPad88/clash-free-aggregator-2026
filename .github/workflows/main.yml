@@ -1,0 +1,72 @@
+name: Build OpenClash Subscription
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub scheduled workflows use UTC. Run hourly at minute 17.
+    - cron: "17 * * * *"
+  push:
+    paths:
+      - "src/**"
+      - "config/**"
+      - ".github/workflows/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openclash-subscription
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build OpenClash/Mihomo subscription
+        run: python src/aggregator.py
+
+      - name: Validate generated YAML
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          p = Path("dist/clash.yaml")
+          if p.exists():
+              d = yaml.safe_load(p.read_text(encoding="utf-8"))
+              assert isinstance(d, dict)
+              assert d.get("proxies"), "Generated subscription has no proxies"
+              assert d.get("proxy-groups"), "Generated subscription has no proxy-groups"
+              print(f"Validated {len(d['proxies'])} proxies")
+          else:
+              print("No new subscription generated; previous file was preserved.")
+          PY
+
+      - name: Show status
+        run: cat dist/status.json
+
+      - name: Commit generated subscription
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: refresh OpenClash subscription"
+            git push
+          fi
