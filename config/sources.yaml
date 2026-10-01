@@ -1,0 +1,47 @@
+# Public subscription sources.
+# These URLs are upstream sources only; your OpenClash subscription URL stays stable.
+
+sources:
+  - name: au1rxx
+    type: clash_yaml
+    url: https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/clash.yaml
+    enabled: true
+
+  - name: zhuhai
+    type: clash_yaml
+    url: https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml
+    enabled: true
+
+  - name: pawdroid
+    type: base64
+    url: https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+    enabled: true
+
+  - name: steam100
+    type: clash_yaml
+    url: https://raw.githubusercontent.com/steam-100/free-proxy-sub/data/clash.yaml
+    enabled: true
+
+settings:
+  # Maximum number of published nodes. Mihomo performs live selection locally.
+  max_nodes: 300
+
+  # Never publish an empty result. Keep the previous dist/clash.yaml instead.
+  min_publish_nodes: 1
+
+  # Upstream HTTP download timeout.
+  request_timeout: 30
+
+  # Mihomo url-test settings.
+  health_check_interval: 300
+  health_check_timeout: 5000
+
+  keep_protocols:
+    - http
+    - socks5
+    - ss
+    - vmess
+    - vless
+    - trojan
+    - hysteria2
+    - tuic
