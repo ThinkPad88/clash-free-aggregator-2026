@@ -1,0 +1,2327 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+proxies:
+- name: FR | zhuhai | FR - zhuhai.uk
+  type: vmess
+  server: 2001:bc8:32d7:1a9::2
+  port: 18901
+  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999-newpac/fanqiang
+- name: FR | zhuhai | FR - zhuhai.uk 02
+  type: http
+  server: 80.15.99.54
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+- name: FR | zhuhai | FR - zhuhai.uk 03
+  type: http
+  server: 83.172.143.53
+  port: 4443
+  tls: true
+  skip-cert-verify: true
+- name: FR | zhuhai | FR - zhuhai.uk 04
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+- name: HK | pawdroid | 美国+弗吉尼亚州赫恩登镇香港电讯盈科有限公司美国分公司
+  type: hysteria2
+  server: xg1.xueshan168.cc
+  port: 20201
+  udp: true
+  password: cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5
+  tls: true
+  sni: xg1.xueshan168.cc
+  skip-cert-verify: true
+- name: JP | zhuhai | JP - zhuhai.uk
+  type: socks5
+  server: 101.36.104.239
+  port: 10808
+- name: JP | zhuhai | JP - zhuhai.uk 02
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: d6fc32ed-05de-430b-99ca-3edc9185e79b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gaFVpIOW9RJGuFFisfXVvITfYY5ikKn-4gB89ZQCFHI
+    short-id: 89fecfdaf45cd76d
+- name: NL | zhuhai | NL - zhuhai.uk
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: NL | zhuhai | NL - zhuhai.uk 01
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  network: ws
+  tls: true
+  servername: tgmansion.site
+  client-fingerprint: firefox
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
+- name: NL | zhuhai | NL - zhuhai.uk 02
+  type: http
+  server: 84.17.47.147
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 84.17.47.147
+  skip-cert-verify: true
+- name: OT | au1rxx | hysteria2-1003712924
+  password: BWAFlp8g53
+  port: 443
+  server: 72.56.102.31
+  skip-cert-verify: true
+  sni: 72.56.102.31
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1005580211
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 35.181.166.40
+  skip-cert-verify: true
+  sni: 35.181.166.40
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1045025816
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8443
+  server: 85.204.107.183
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1051283241
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8443
+  server: 85.204.107.184
+  skip-cert-verify: false
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1058426437
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1059661404
+  password: 184cdec28da5a09450803c8debcd2cc9
+  port: 50160
+  server: 138.3.208.26
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1063751359
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: 138.2.73.238
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1066924718
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-106798541
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-107825281
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1087758493
+  password: 184cdec28da5a09450803c8debcd2cc9
+  port: 50160
+  server: 138.3.208.26
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1093247054
+  password: 184cdec28da5a09450803c8debcd2cc9
+  port: 50160
+  server: 138.3.208.26
+  skip-cert-verify: true
+  sni: 138.3.208.26
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1093669534
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1111846076
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: speedtest.tinkoff.ru
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1111846126
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: whatsapp.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1111846187
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1111846211
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: t.me
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1121839551
+  password: HysTeria2026!Proxy
+  port: 8443
+  server: mz.hkychina.com
+  skip-cert-verify: false
+  sni: mz.hkychina.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1136510856
+  password: HysTeria2026!Proxy
+  port: 8443
+  server: mz.hkychina.com
+  skip-cert-verify: true
+  sni: mz.hkychina.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1142149999
+  password: HysTeria2026!Proxy
+  port: 8443
+  server: mz.hkychina.com
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1162353391
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1163840992
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1232696196
+  password: maintell
+  port: 2053
+  server: 152.70.237.123
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1255010039
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1276640913
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2рҹүрҹү
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1276640916
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1276641967
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1308897119
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1308897122
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1308903957
+  password: 31329f25
+  port: 4443
+  server: 198.46.215.223
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1333159811
+  password: HysTeria2026!Proxy
+  port: 8443
+  server: mz.hkychina.com
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-13527647
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  port: 52454
+  server: 45.88.43.116
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1393931802
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  port: 22443
+  server: 91.240.86.70
+  skip-cert-verify: true
+  sni: itsallproxy.quattro-tech.ru
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1420323645
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-143263693
+  password: dongtaiwang.com
+  port: 44356
+  server: hy2.561891.xyz
+  skip-cert-verify: true
+  sni: hy2.561891.xyz
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1446360527
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 4433
+  server: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1456970890
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1456970891
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1456970892
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1466428064
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152.69.231.175
+  skip-cert-verify: true
+  sni: 152-69-231-175.liao.kdns.fr
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1470835078
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.cc.cd
+  skip-cert-verify: true
+  sni: open.2ml.cc.cd
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1470835082
+  password: my_super_password_123
+  port: 5443
+  server: open.w2m.ink
+  skip-cert-verify: true
+  sni: open.w2m.ink
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1470835089
+  password: my_super_password_123
+  port: 443
+  server: open.w2m.ink
+  skip-cert-verify: true
+  sni: open.w2m.ink
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1471631078
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1474773089
+  password: my_super_password_123
+  port: 5443
+  server: open.w2m.ink
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1474773098
+  password: my_super_password_123
+  port: 443
+  server: open.w2m.ink
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1475971538
+  password: my_super_password_123
+  port: 5443
+  server: open.w2m.ink
+  skip-cert-verify: false
+  sni: open.w2m.ink
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1479408016
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 60111
+  server: 62.210.7.139
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1480344713
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.cc.cd
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1482811797
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  port: 8443
+  server: 82.38.64.237
+  skip-cert-verify: false
+  sni: hopp-swizland-new.mysynology.net
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1486293141
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8443
+  server: 85.204.107.188
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1491041356
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.cc.cd
+  skip-cert-verify: false
+  sni: open.2ml.cc.cd
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1495885491
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.cc.cd
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1502094720
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.99
+  skip-cert-verify: true
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1503208276
+  password: my_super_password_123
+  port: 443
+  server: open.w2m.ink
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1503942433
+  password: b0917015b656b3dd2286b5633af0c5c1
+  port: 50160
+  server: 31.57.248.176
+  skip-cert-verify: true
+  sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1507123858
+  password: pbgLTkd5276SN1sZ
+  port: 8443
+  server: 144.24.46.175
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1507423268
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 35.181.166.40
+  skip-cert-verify: true
+  sni: vpn-fr-002.fastervpn.world#🪐33@oneclickvpnkeysvless://f495298f-2bdb-4fd8-9ac9-5dd33d1b482a@185.171.202.106:443?encryption=none
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1509420484
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.bid
+  skip-cert-verify: true
+  sni: open.2ml.bid
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1509420486
+  password: my_super_password_123
+  port: 443
+  server: open.2ml.bid
+  skip-cert-verify: true
+  sni: open.2ml.bid
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1509475552
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2üáüá
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1515687090
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.100
+  skip-cert-verify: false
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1515688053
+  password: my_super_password_123
+  port: 443
+  server: open.2ml.bid
+  skip-cert-verify: false
+  sni: open.2ml.bid
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1517930487
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.100
+  skip-cert-verify: true
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1520000103
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  port: 8443
+  server: 82.38.64.235
+  skip-cert-verify: true
+  sni: hopp-swizland-new.mysynology.net
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1527031530
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.bid
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1527031539
+  password: my_super_password_123
+  port: 443
+  server: open.2ml.bid
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1527482523
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1529329421
+  password: RN_3f80eeb4bbd0f13f
+  port: 443
+  server: 192.255.128.123
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1531286498
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 35.181.166.40
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1531623568
+  password: RN_3f80eeb4bbd0f13f
+  port: 443
+  server: 192.255.128.123
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1532335411
+  password: 099830134df5ac3a04a4b21d39b8c395
+  port: 50160
+  server: 163.192.14.135
+  skip-cert-verify: true
+  sni: 163.192.14.135
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1532335412
+  password: RN_3f80eeb4bbd0f13f
+  port: 443
+  server: 192.255.128.123
+  skip-cert-verify: true
+  sni: 192.255.128.123
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1532454246
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2����
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-153592298
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: hy2.123266.xyz
+  skip-cert-verify: false
+  sni: hy2.123266.xyz
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1537386177
+  password: pbgLTkd5276SN1sZ
+  port: 8443
+  server: 144.24.46.175
+  skip-cert-verify: true
+  sni: 144.24.46.175
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1539376562
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.127.134
+  skip-cert-verify: false
+  sni: hop-germany-september.dynuddns.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1546218830
+  password: dongtaiwang.com
+  port: 44356
+  server: hy2.561891.xyz
+  skip-cert-verify: false
+  sni: hy2.561891.xyz
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1546218840
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1547179636
+  password: my_super_password_123
+  port: 443
+  server: open.2ml.bid
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1549697709
+  password: 96ab5cd282733fd4c312a61f972f330a
+  port: 443
+  server: vp3.yysyy.online
+  skip-cert-verify: false
+  sni: vp3.yysyy.online
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1552278389
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  port: 443
+  server: 144.31.212.253
+  skip-cert-verify: true
+  sni: vps155-edge.kermemehori.ru
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1553149732
+  password: 96ab5cd282733fd4c312a61f972f330a
+  port: 443
+  server: vp3.yysyy.online
+  skip-cert-verify: true
+  sni: vp3.yysyy.online
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1555784016
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.127.134
+  skip-cert-verify: true
+  sni: hop-germany-september.dynuddns.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1558953024
+  password: cloud:Wz8cE3yFhL9dXoSp
+  port: 8443
+  server: ss.marmount.space
+  skip-cert-verify: true
+  sni: ss.marmount.space
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1561765011
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-hk-004.fastervpn.world
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1561765055
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-us-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-us-001.fastervpn.world
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1564791370
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.101
+  skip-cert-verify: true
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1571338179
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8443
+  server: 103.126.51.36
+  skip-cert-verify: false
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1571839498
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.127.137
+  skip-cert-verify: true
+  sni: hop-germany-september.dynuddns.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1583578935
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  port: 52454
+  server: 45.88.43.116
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1583578936
+  password: Krab9Hyst2_Rk7pQ2xL
+  port: 36723
+  server: 151.247.197.253
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1588408408
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8443
+  server: 103.126.51.38
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1588619999
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  port: 2060
+  server: rb.mangshe.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1589277560
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2ⁿß«ⁿß
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1591550732
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.127.143
+  skip-cert-verify: false
+  sni: hop-germany-september.dynuddns.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1591550745
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.103
+  skip-cert-verify: false
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1597399351
+  password: b4c8ee9caa74b7ba0a61
+  port: 35076
+  server: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
+  sni: scrap.halyvanedorogo.ru
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1601799750
+  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  port: 443
+  server: 8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  skip-cert-verify: true
+  sni: 8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1601799759
+  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  port: 443
+  server: 52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com
+  skip-cert-verify: true
+  sni: 52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-1601799766
+  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  port: 443
+  server: 96b301c8-tmkao0-u4zg37-1jcwu.nw4.hyhuawei.com
+  skip-cert-verify: true
+  sni: 96b301c8-tmkao0-u4zg37-1jcwu.nw4.hyhuawei.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-16610
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https://t.me/oneclickvpnkeys
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-180178213
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  sni: 155.248.209.237
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-200242608
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-207301017
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: vpn-tw-002.fastervpn.world
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-24391
+  password: dongtaiwang.com
+  port: 22000
+  server: 62.210.124.146
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-250733440
+  password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
+  port: 8443
+  server: 159.223.157.129
+  skip-cert-verify: true
+  sni: 159.223.157.129
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-290666035
+  password: gf1:gfhysteria2024
+  port: 443
+  server: 185.156.44.99
+  skip-cert-verify: true
+  sni: www.amazon.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-315405971
+  password: gf1:gfhysteria2024
+  port: 443
+  server: 185.156.44.99
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-328918461
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-467420662
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https://t.me/oneclickvpnkeys
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-467980788
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: https://t.me/clashv8🇨🇳
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-468018931
+  password: gf1:gfhysteria2024
+  port: 443
+  server: 5.129.235.85
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-468273420
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-468892432
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-468892442
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-468898830
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-474576738
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  sni: hy2.123266.xyz
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-474576739
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: hy2.123266.xyz
+  skip-cert-verify: true
+  sni: hy2.123266.xyz
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-474576856
+  password: gf1:gfhysteria2024
+  port: 443
+  server: 185.156.44.99
+  skip-cert-verify: true
+  sni: 185.156.44.99
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-479013117
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  port: 52454
+  server: 45.88.43.116
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-483633861
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: google.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-483633862
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: speedtest.tinkoff.ru
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-500716426
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: 160.187.100.109
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-540983040
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-553326949
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: true
+  sni: 152-69-231-175.liao.kdns.fr
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-553326952
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: 152-67-200-82.liao.kdns.fr
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-561697888
+  password: dongtaiwang.com
+  port: 44356
+  server: hy2.561891.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-589844071
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: https://t.me/clashv8
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-620179978
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  port: 443
+  server: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+  sni: admin.wwwinternetvideo.click
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-650314288
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: 103.115.109.49
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-650314301
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  port: 443
+  server: de.1.23.h2corp.org
+  skip-cert-verify: true
+  sni: germany3.h2corp.local
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-650429104
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-650659597
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 60111
+  server: 62.210.7.139
+  skip-cert-verify: true
+  sni: 62.210.7.139
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-650663575
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: 202.146.222.174
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-650665463
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  port: 52454
+  server: 45.88.43.116
+  skip-cert-verify: true
+  sni: 45.88.43.116
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-652726817
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  port: 443
+  server: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-652726872
+  password: dongtaiwang.com
+  port: 44356
+  server: hy2.561891.xyz
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-655713431
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-655819436
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  port: 443
+  server: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-kr-002.fastervpn.world
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-655837404
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2🇨🇳
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-655838404
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2🇨🇳
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-663905691
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: 202.146.222.89
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-667703181
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-669642615
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+  sni: 152-69-231-175.liao.kdns.fr
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-669755179
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: false
+  sni: 152-67-200-82.liao.kdns.fr
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-674602384
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: hy2.123266.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-689011839
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 43115
+  server: 62.210.147.2
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-692912199
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-700290962
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-700405721
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-721489373
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: t.me
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-721489375
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: t.me
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-722298530
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: google.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-722298630
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: whatsapp.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-737135161
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: 'https:'
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-855474016
+  password: gf1:gfhysteria2024
+  port: 443
+  server: 173.212.201.85
+  skip-cert-verify: true
+  sni: 173.212.201.85
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-855509014
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  port: 33333
+  server: 155.248.209.237
+  skip-cert-verify: true
+  sni: 155.248.209.2
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-856461941
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2üá®üá≥
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-856679747
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-857369683
+  password: 099830134df5ac3a04a4b21d39b8c395
+  port: 50160
+  server: 163.192.14.135
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-860759685
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8080
+  server: 85.204.107.172
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-862364762
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  port: 4433
+  server: de1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-863226972
+  password: b0917015b656b3dd2286b5633af0c5c1
+  port: 50160
+  server: 31.57.248.176
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-864234258
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-892566577
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-892566578
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-892566711
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-892566713
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-896855667
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8080
+  server: 85.204.107.173
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-918221088
+  password: 099830134df5ac3a04a4b21d39b8c395
+  port: 50160
+  server: 163.192.14.135
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-918221107
+  password: 099830134df5ac3a04a4b21d39b8c395
+  port: 50160
+  server: 163.192.14.135
+  skip-cert-verify: true
+  sni: speedtest.tinkoff.ru
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-918692263
+  password: b0917015b656b3dd2286b5633af0c5c1
+  port: 50160
+  server: 31.57.248.176
+  skip-cert-verify: true
+  sni: 31.57.248.176
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-920243845
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-932065352
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: 152.67.200.82
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-951497680
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fclashv8
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-951497726
+  password: BWAFlp8g53
+  port: 443
+  server: hys28.wba-pn.ru
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-951929323
+  password: 7302ad33229de166d393cd56143a1e4c
+  port: 50160
+  server: 131.186.19.174
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-956723733
+  password: 1671a252e2a97dc2bda4e515475931da
+  port: 50160
+  server: 132.226.226.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-985469467
+  password: gf1:gfhysteria2024
+  port: 443
+  server: 66.94.121.46
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- name: OT | au1rxx | hysteria2-985469468
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11012
+  password: eDfN7SODQceIOmIAbtJJtK
+  port: 443
+  server: 198.98.53.130
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11020
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.183
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11023
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11026
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.200
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11030
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.212
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11045
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.18
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11048
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.3
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-11049
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.47
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1105433917
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 15.204.246.107
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-112078279
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.36
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-114874950
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.132
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1160568980
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 15.204.233.41
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1251465982
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.164.175.81
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1251465987
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 82.110.60.9
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-125384
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 128.199.172.224
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-125944315
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.162
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-127255
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.188
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-129824
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.13
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-129825
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.182
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-130087
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.62
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-130088
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.9
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1381800264
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  port: 9443
+  server: yyz-ca-01.blncvpn4u.cc
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1415925706
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  port: 9443
+  server: 185.156.47.97
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-155
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: OT | au1rxx | shadowsocks-1551398181
+  password: amazonskr05
+  port: 443
+  server: 98.89.22.134
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-156
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: OT | au1rxx | shadowsocks-1561296758
+  password: amazonskr05
+  port: 443
+  server: 98.88.75.157
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-157
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.0.177
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1574303180
+  password: 2591a42af498878e47d881cd1ed1fa9d
+  port: 10676
+  server: 66.23.204.219
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1575014861
+  password: 0dd1077fdfae98efd742d9b97e5dbb87
+  port: 15442
+  server: 104.192.225.110
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1575947162
+  password: 1cbb3e347ee86e1980a7c731e9dd00a0
+  port: 17201
+  server: 64.74.161.148
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1577646737
+  password: 62dd75ba944947d4ca983cf1679b3797
+  port: 15240
+  server: 173.234.25.90
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1578174501
+  password: 87e9cb62706b5cd08da95b8b423cb673
+  port: 16469
+  server: 103.214.111.162
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-158
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1587791252
+  password: bKgENdAl@8Zx3lAc-HK-BD-20260622
+  port: 24443
+  server: 154.86.30.45
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1588621192
+  password: f8e5c6741fbbc00504f41af1ab878402
+  port: 17915
+  server: 161.129.71.149
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-158885953
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.147
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-159
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1591554862
+  password: oPlv4+8UGEF0KZ5f4kDFxpvV5SsW+3veVs23YwxFmBk=
+  port: 50356
+  server: 129.146.164.199
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1591586188
+  password: 72553320ae6bcc8f
+  port: 20999
+  server: 212.192.13.143
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1591586192
+  password: 0b6091bbea4d8d0ab0e327902dcd3244
+  port: 16444
+  server: 103.214.109.197
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384206
+  password: 3xMm5xgXbTZlZN0/QyvErnfTdFEhlQ4b1Isuhx6fgwM=
+  port: 59924
+  server: 130.61.119.194
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384208
+  password: rn3fzP+5S/uNM95/6uQr3rQEowZWgWUG3e2f853i1Ww=
+  port: 50356
+  server: 129.146.60.110
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384209
+  password: wfjlerxqgV1dNYGC7TGrQDmy4VFsKwyilqc5uewzCJo=
+  port: 50356
+  server: 129.146.38.157
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384212
+  password: 9Biq/bLYu1Dmcuj4yhbtgnOVwa2pzAUAK0kPEL2FOJY=
+  port: 50356
+  server: 129.146.38.47
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384214
+  password: 7V16oHuTUxMQAfyrAro/m7NXdWktRoYZvIcoV7E0eHE=
+  port: 50356
+  server: 129.146.56.197
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384223
+  password: 51+j0f1sGG8aVSYp0xZndUB2C/cmrUeGq7BYOKpcI/o=
+  port: 50356
+  server: 129.146.63.176
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384224
+  password: QYtvxQOIkEwTQip+UgO3xOoB0+bygHjHku84F9QYGEo=
+  port: 56927
+  server: 168.107.88.238
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1592384225
+  password: q6kAe3NGTj9lWFJZZPAYgzsRW63FGHPlsx5eI9oznUc=
+  port: 45819
+  server: 141.148.236.137
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1593089672
+  password: 6c4993acd1ca7f12f0a18bdcb3c37c6c
+  port: 10274
+  server: 66.23.201.174
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1593870598
+  password: 0dd1077fdfae98efd742d9b97e5dbb87
+  port: 15438
+  server: 104.192.225.106
+  type: ss
+  udp: true
+- cipher: 2022-blake3-aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1594888746
+  password: NzJlOTQ5NWYtM2ZkYi00Cg==
+  port: 28679
+  server: 103.11.76.248
+  type: ss
+  udp: true
+- cipher: 2022-blake3-aes-256-gcm
+  name: OT | au1rxx | shadowsocks-1595951312
+  password: ad8eqTJ4pcXibDSIE/90ObnHNABLoVO8Gzpq6DlGTGc=:rN//WmXR71iKTF+NlcmOg+EmbFVsxLUcxAI1YdWKOhE=
+  port: 27797
+  server: 31.57.185.82
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-1596432404
+  password: 14aa62344b706355c4444b255c5fc041
+  port: 19693
+  server: 199.60.101.12
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: OT | au1rxx | shadowsocks-1598364707
+  password: 3vkiRCxBVuoIaNr1JDwI2U5J8NdF0xUQG9aCerKc6jM=
+  port: 56927
+  server: 129.150.57.198
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-16136
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.181
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-166
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 137.184.174.93
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-166303196
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.198
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-174
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.155
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-175
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-178
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-179
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.235
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-181
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-183
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-184
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.151
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-186
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.204
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-189
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-190
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-192
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-194
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-195
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.243
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-208
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-209
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-211
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-213
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-218
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-236
+  password: aduB9HGxQHjA2SBMRjkHX6
+  port: 443
+  server: 102.37.156.224
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-240
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-25281
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.82
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-254910437
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.175
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-268
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.35
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-269
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.199
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27269
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27271
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.51
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27275
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.11
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27276
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 23.251.121.242
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27285
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27347
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.236
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27348
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27349
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.235.122
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-27350
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.45
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-274
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.10
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-277388490
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.225
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: OT | au1rxx | shadowsocks-287
+  password: qwerREWQ@@
+  port: 6123
+  server: 211.178.105.134
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-415242973
+  password: FD3rCuOsxOay
+  port: 8388
+  server: 15.235.75.71
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: OT | au1rxx | shadowsocks-45641610
+  password: shadowsocks
+  port: 443
+  server: 158.173.20.208
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-468218487
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.43.159
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-468218514
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.197
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-468218595
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.23.32
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: OT | au1rxx | shadowsocks-468218613
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.197.141.58
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-56693562
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: OT | au1rxx | shadowsocks-60057373
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.48
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-687923666
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 15.204.246.132
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-696780669
+  password: 3eOFeNssde7PYYMv
+  port: 80
+  server: 84.247.155.196
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-696780670
+  password: LXchLsIwtCeUAUgu
+  port: 80
+  server: 149.102.149.207
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-696780676
+  password: kKEd0rBrd56Furjz
+  port: 443
+  server: 2.58.81.221
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-696780678
+  password: g5h5jleTRSyO3Rk4
+  port: 443
+  server: 149.102.132.184
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-717969008
+  password: g5h5jleTRSyO3Rk4
+  port: 80
+  server: 149.102.132.184
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: OT | au1rxx | shadowsocks-717969059
+  password: LXchLsIwtCeUAUgu
+  port: 443
+  server: 149.102.149.207
+  type: ss
+  udp: true
+proxy-groups:
+- name: Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+- name: Hong Kong Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(香港|港|hong[\s_-]*kong|\bhk\b|🇭🇰)
+- name: Taiwan Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(台湾|台灣|taiwan|\btw\b|🇹🇼)
+- name: Japan Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(日本|japan|\bjp\b|🇯🇵)
+- name: Singapore Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(新加坡|singapore|\bsg\b|🇸🇬)
+- name: United States Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(美国|美國|united[\s_-]*states|\busa?\b|\bus\b|🇺🇸)
+- name: Netherlands Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(荷兰|荷蘭|netherlands|\bnl\b|amsterdam|🇳🇱)
+- name: France Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(法国|法國|france|\bfr\b|paris|🇫🇷)
+- name: Germany Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(德国|德國|germany|\bde\b|frankfurt|🇩🇪)
+- name: United Kingdom Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(英国|英國|united[\s_-]*kingdom|\buk\b|london|🇬🇧)
+- name: South Korea Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(韩国|韓國|south[\s_-]*korea|\bkr\b|seoul|🇰🇷)
+- name: Canada Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(加拿大|canada|\bca\b|toronto|🇨🇦)
+- name: Australia Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(澳大利亚|澳洲|australia|\bau\b|sydney|🇦🇺)
+- name: Russia Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i)(俄罗斯|俄羅斯|russia|\bru\b|moscow|🇷🇺)
+- name: YouTube
+  type: select
+  proxies:
+  - YouTube Auto
+  - Auto
+  - Japan Auto
+  - Singapore Auto
+  - Hong Kong Auto
+  - Taiwan Auto
+  - United States Auto
+  - Netherlands Auto
+  - France Auto
+  - Germany Auto
+  - United Kingdom Auto
+  - South Korea Auto
+  - Canada Auto
+  - Australia Auto
+  - DIRECT
+- name: Google
+  type: select
+  proxies:
+  - Google Auto
+  - Auto
+  - Japan Auto
+  - Singapore Auto
+  - Hong Kong Auto
+  - Taiwan Auto
+  - United States Auto
+  - Netherlands Auto
+  - France Auto
+  - Germany Auto
+  - United Kingdom Auto
+  - South Korea Auto
+  - Canada Auto
+  - Australia Auto
+  - DIRECT
+- name: Proxy
+  type: select
+  proxies:
+  - Auto
+  - YouTube
+  - Google
+  - Auto
+  - Japan Auto
+  - Singapore Auto
+  - Hong Kong Auto
+  - Taiwan Auto
+  - United States Auto
+  - Netherlands Auto
+  - France Auto
+  - Germany Auto
+  - United Kingdom Auto
+  - South Korea Auto
+  - Canada Auto
+  - Australia Auto
+  - DIRECT
+- name: Final
+  type: select
+  proxies:
+  - Proxy
+  - Auto
+  - DIRECT
+- name: YouTube Auto
+  type: url-test
+  include-all: true
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i).*
+- name: Google Auto
+  type: url-test
+  include-all: true
+  url: https://www.google.com/generate_204
+  interval: 300
+  tolerance: 80
+  timeout: 5000
+  filter: (?i).*
+rules:
+- DOMAIN-SUFFIX,youtube.com,YouTube
+- DOMAIN-SUFFIX,youtu.be,YouTube
+- DOMAIN-SUFFIX,youtube-nocookie.com,YouTube
+- DOMAIN-SUFFIX,googlevideo.com,YouTube
+- DOMAIN-SUFFIX,ytimg.com,YouTube
+- DOMAIN-SUFFIX,ggpht.com,YouTube
+- DOMAIN-SUFFIX,google.com,Google
+- DOMAIN-SUFFIX,googleapis.com,Google
+- DOMAIN-SUFFIX,gstatic.com,Google
+- DOMAIN-SUFFIX,googleusercontent.com,Google
+- DOMAIN-SUFFIX,github.com,Proxy
+- DOMAIN-SUFFIX,githubusercontent.com,Proxy
+- GEOIP,LAN,DIRECT,no-resolve
+- GEOIP,CN,DIRECT
+- MATCH,Final
