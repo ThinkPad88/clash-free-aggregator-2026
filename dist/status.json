@@ -1,51 +1,50 @@
 {
-  "generated_at_utc": "2026-10-01T22:40:15Z",
+  "generated_at_utc": "2026-10-02T02:14:30Z",
   "mode": "openclash-mihomo",
   "successful_sources": 4,
   "enabled_sources": 4,
-  "raw_nodes": 1894,
-  "unique_nodes": 1104,
+  "raw_nodes": 1897,
+  "unique_nodes": 1174,
   "published_nodes": 300,
   "publication": "updated",
   "sources": [
     {
       "source": "au1rxx",
-      "fetched": 1818,
-      "valid": 1818,
+      "fetched": 1804,
+      "valid": 1804,
       "error": null
     },
     {
       "source": "zhuhai",
-      "fetched": 42,
-      "valid": 42,
+      "fetched": 41,
+      "valid": 39,
       "error": null
     },
     {
       "source": "pawdroid",
-      "fetched": 7,
-      "valid": 7,
+      "fetched": 20,
+      "valid": 20,
       "error": null
     },
     {
       "source": "steam100",
-      "fetched": 27,
-      "valid": 27,
+      "fetched": 34,
+      "valid": 34,
       "error": null
     }
   ],
   "protocols": {
+    "hysteria2": 172,
     "vless": 8,
     "http": 3,
-    "hysteria2": 167,
-    "ss": 113,
-    "trojan": 9
+    "ss": 117
   },
   "regions": {
-    "Canada": 1,
-    "Germany": 3,
-    "Hong Kong": 2,
-    "Japan": 2,
-    "Netherlands": 3,
-    "Other": 289
+    "France": 1,
+    "Germany": 4,
+    "Hong Kong": 3,
+    "Japan": 1,
+    "Netherlands": 4,
+    "Other": 287
   }
 }
