@@ -1,0 +1,47 @@
+{
+  "generated_at_utc": "2026-10-04T16:06:12Z",
+  "mode": "openclash-mihomo",
+  "successful_sources": 4,
+  "enabled_sources": 4,
+  "raw_nodes": 1829,
+  "unique_nodes": 1148,
+  "published_nodes": 300,
+  "publication": "updated",
+  "sources": [
+    {
+      "source": "au1rxx",
+      "fetched": 1829,
+      "valid": 1776,
+      "error": null
+    },
+    {
+      "source": "zhuhai",
+      "fetched": 28,
+      "valid": 22,
+      "error": null
+    },
+    {
+      "source": "pawdroid",
+      "fetched": 12,
+      "valid": 12,
+      "error": null
+    },
+    {
+      "source": "steam100",
+      "fetched": 19,
+      "valid": 19,
+      "error": null
+    }
+  ],
+  "protocols": {
+    "hysteria2": 60,
+    "ss": 54,
+    "trojan": 96,
+    "vless": 48,
+    "vmess": 42
+  },
+  "regions": {
+    "Other": 300
+  },
+  "v2rayn_uris": 300
+}
