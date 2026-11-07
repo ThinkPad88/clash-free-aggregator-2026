@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-11-05T11:06:41Z",
+  "generated_at_utc": "2026-11-07T10:23:22Z",
   "mode": "openclash-mihomo",
   "successful_sources": 4,
   "enabled_sources": 4,
-  "raw_nodes": 1756,
-  "unique_nodes": 1076,
+  "raw_nodes": 1748,
+  "unique_nodes": 1067,
   "published_nodes": 300,
   "publication": "updated",
   "sources": [
@@ -16,20 +16,20 @@
     },
     {
       "source": "zhuhai",
-      "fetched": 30,
-      "valid": 29,
+      "fetched": 31,
+      "valid": 31,
       "error": null
     },
     {
       "source": "pawdroid",
-      "fetched": 9,
-      "valid": 9,
+      "fetched": 20,
+      "valid": 20,
       "error": null
     },
     {
       "source": "steam100",
-      "fetched": 28,
-      "valid": 28,
+      "fetched": 7,
+      "valid": 7,
       "error": null
     }
   ],
