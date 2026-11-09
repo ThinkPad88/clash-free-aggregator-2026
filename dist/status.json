@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-11-07T10:23:22Z",
+  "generated_at_utc": "2026-11-09T11:45:02Z",
   "mode": "openclash-mihomo",
   "successful_sources": 4,
   "enabled_sources": 4,
-  "raw_nodes": 1748,
-  "unique_nodes": 1067,
+  "raw_nodes": 1755,
+  "unique_nodes": 1074,
   "published_nodes": 300,
   "publication": "updated",
   "sources": [
@@ -16,8 +16,8 @@
     },
     {
       "source": "zhuhai",
-      "fetched": 31,
-      "valid": 31,
+      "fetched": 32,
+      "valid": 32,
       "error": null
     },
     {
@@ -28,8 +28,8 @@
     },
     {
       "source": "steam100",
-      "fetched": 7,
-      "valid": 7,
+      "fetched": 13,
+      "valid": 13,
       "error": null
     }
   ],
